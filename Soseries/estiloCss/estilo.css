@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #34495e;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	color: white;
+}
+button {
+	cursor: pointer;
+}
+
+/* Cabeçalho da pagina */
+header .logo {
+	width: 190px;
+	height: 90px;
+	background-image: url(../imagens/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-indent: -9888px;
+}
+header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav a{
+	color: white;
+	margin-right: 40px;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #e8be12;
+}
+nav button {
+	height: 30px;
+	width: 110px;
+	margin-right: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+	background-color: rgba(255,255,240, .40);
+}
+nav button:hover {
+	background-color: #e8be12;
+}
+
+/* Corpo principal da pagina */
+
+main .capa-principal {
+	height: 490px;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../imagens/poster.jpg);
+	background-size: cover;
+	display: flex; 
+}
+main .capa-principal1 {
+	height: 620px;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../imagens/poster.jpg);
+	background-size: cover;
+	display: flex; 
+}
+
+main .capa {
+	height: 420px;
+	width: 310px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-image: url(../imagens/imagem.jpg);
+	background-size: cover; 
+}
+main .capa1 {
+	height: 460px;
+	width: 340px;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-left: 30px;
+	background-image: url(../imagens/imagem.jpg);
+	background-size: cover; 
+}
+
+.conteudo {
+	width: 50%;
+	height: 70%;
+	margin: 20px;
+}
+.conteudo .titulo {
+	font-size: 30px;
+}
+.conteudo .sinopse {
+	margin-top: 40px;
+	margin-bottom: 15%;
+}
+.conteudo .sinopse1 {
+	margin-bottom: 15%;
+}
+.conteudo .botao {
+	width: 170px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	margin-right: 15px;
+	background-color: rgba(0,0,0,.50);
+	color: white;
+}
+.conteudo .botao:hover {
+	background-color: white;
+	color: black;
+	transition: 1s ease all;
+}
+
+.box-filme {
+	width: 200px;
+	height: 300px;
+	display: block;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.trailer2 {
+	margin-top: 50px;
+	margin-left: 10px;
+}
+
+.info {
+	width: 94%;
+}
+
+
+
+@media screen and (max-width: 760px){
+	header .container {
+		display: flex;
+		flex-direction: column;
+	}
+	.conteudo .titulo {
+		font-size: 22px;
+	}
+	p {
+		font-size: 15px;
+	}
+	button {
+		margin-top: 5px;
+	}
+
+}
